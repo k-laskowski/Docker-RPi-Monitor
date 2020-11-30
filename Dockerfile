@@ -8,7 +8,7 @@ ENV  DEBIAN_FRONTEND noninteractive
 
 # Install RPI-Monitor form Xavier Berger's repository
 RUN apt-get -y update && \
-    apt-get install -y --no-install-recommends dirmngr apt-transport-https ca-certificates  && \
+    apt-get install -y --no-install-recommends dirmngr apt-transport-https ca-certificates nano  && \
     apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2C0D3C0F && \
     echo deb http://giteduberger.fr rpimonitor/ > /etc/apt/sources.list.d/rpimonitor.list && \
     apt-get -y update && \
